@@ -13,15 +13,6 @@ import { Test2Component } from './test2/test2.component';
 
 import { CoreModalLateralTransition } from './../classess/modal-lateral-transition';
 import { CorePageTransition } from './../classess/page-transition';
-import { CoreAppProvider } from '../providers/app';
-import { CoreLoggerProvider } from '../providers/logger';
-import { CoreDomUtilsProvider } from './../providers/utils/dom';
-import { CoreMimetypeUtilsProvider } from './../providers/utils/mimetype';
-import { CoreEventsProvider } from '../providers/events';
-import { CoreTextUtilsProvider } from '../providers/utils/text';
-import { CoreTimeUtilsProvider } from './../providers/utils/time';
-import { CoreUtilsProvider } from './../providers/utils/utils';
-
 
 export interface LibConfig {
   apiUrl: string;
@@ -54,14 +45,6 @@ export const LibConfigService = new InjectionToken<LibConfig>('LibConfig');
   ],
   providers: [
     CleanLibService,
-    CoreTextUtilsProvider,
-    CoreDomUtilsProvider,
-    CoreAppProvider,
-    CoreEventsProvider,
-    CoreLoggerProvider,
-    CoreMimetypeUtilsProvider,
-    CoreTimeUtilsProvider,
-    CoreUtilsProvider
   ],
 })
 export class CleanLibModule {
