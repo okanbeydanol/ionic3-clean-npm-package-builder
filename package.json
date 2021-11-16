@@ -1,0 +1,66 @@
+{
+  "name": "ionic3-clean-npm-package-builder",
+  "version": "1.0.1",
+  "description": "Ionic 3 component providing a clean npm package builder",
+  "main": "./dist/es2015/public-api.js",
+  "typings": "./dist/es2015/public-api.d.ts",
+  "scripts": {
+    "build": "node ./gulp/task-build.js",
+    "build:link": "node ./gulp/task-build.js && npm link && cd demoApp && npm link ionic3-clean-npm-package-builder && cd ..",
+    "build:publish": "node ./gulp/task-build.js && npm link && cd demoApp && npm link ionic3-clean-npm-package-builder && cd .. && npm publish",
+    "watch": "npx gulp watch",
+    "serve": "npm link && cd demoApp && npm link ionic3-clean-npm-package-builder && ionic serve",
+    "repair": "rm -rf node_modules && rm -rf dist && rm -rf .tmp && rm -rf package-lock.json && npm install && node ./gulp/task-build.js && npm link && cd demoApp && rm -rf node_modules && rm -rf www && rm -rf package-lock.json && npm install && npm link ionic3-clean-npm-package-builder"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/okanbeydanol/ionic3-clean-npm-package-builder.git"
+  },
+  "keywords": [
+    "ionic3",
+    "angular5",
+    "component",
+    "clean"
+  ],
+  "author": "Okan Beydanol",
+  "license": "MIT",
+  "devDependencies": {
+    "@angular/common": "5.2.11",
+    "@angular/compiler": "5.2.11",
+    "@angular/compiler-cli": "5.2.11",
+    "@angular/core": "5.2.11",
+    "@angular/forms": "5.2.11",
+    "@angular/http": "5.2.11",
+    "@angular/platform-browser": "5.2.11",
+    "@angular/platform-browser-dynamic": "5.2.11",
+    "@angular/platform-server": "5.2.11",
+    "@ionic-native/clipboard": "4.20.0",
+    "@ionic-native/core": "4.20.0",
+    "@ionic-native/diagnostic": "4.20.0",
+    "@ionic-native/file": "4.20.0",
+    "@ionic-native/geolocation": "4.20.0",
+    "@ionic-native/in-app-browser": "4.20.0",
+    "@ionic-native/keyboard": "4.20.0",
+    "@ionic-native/network": "4.20.0",
+    "@ionic-native/zip": "4.20.0",
+    "clean-css": "^5.2.2",
+    "fs-extra": "^4.0.2",
+    "moment": "2.24.0",
+    "ionic-angular": "~3.9.9",
+    "node-sass": "^4.5.3",
+    "rxjs": "5.5.12",
+    "typescript": "~2.8.4",
+    "zone.js": "0.8.18"
+  },
+  "peerDependencies": {
+    "moment": "2.24.0",
+    "ionic-angular": "~3.9.9",
+    "@ionic-native/keyboard": "4.20.0"
+  },
+  "dependencies": {
+    "glob": "^7.2.0",
+    "gulp": "^4.0.2",
+    "moment": "2.24.0",
+    "@ionic-native/keyboard": "4.20.0"
+  }
+}

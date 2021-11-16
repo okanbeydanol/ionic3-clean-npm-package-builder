@@ -1,0 +1,24 @@
+# Node generated files
+node_modules
+npm-debug.log
+yarn.lock
+
+# OS generated files
+Thumbs.db
+.DS_Store
+.vscode
+
+# Ignored files
+*.js
+*.map
+*.d.ts
+*.css
+*.tgz
+
+# Exceptions
+!task-build.js
+
+# Ignored folders
+dist
+aot
+.tmp

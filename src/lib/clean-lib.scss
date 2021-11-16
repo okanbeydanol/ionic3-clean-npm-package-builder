@@ -1,0 +1,98 @@
+skills-index {
+  img {
+    position: relative;
+    z-index: 1;
+    display: block !important;
+    margin: auto !important;
+  }
+  .competecies-list {
+    margin-top: 25px !important;
+    padding-left: 5px !important;
+    padding-right: 10px !important;
+  }
+  .scroll-content {
+    margin-bottom: 50px !important;
+  }
+  ion-label {
+    // padding-left: 5px !important;
+    // font-style: normal !important;
+    // font-weight: normal !important;
+    // font-size: 20px !important;
+    // line-height: 24px !important;
+    // color: #4C4C4C !important;
+    font-style: normal !important;
+    font-weight: 200 !important;
+    font-size: 20px !important;
+    line-height: 24px !important;
+    color: #4C4C4C !important;
+    font-family: "SF Pro Display" !important;
+  }
+  h6.course-name {
+    font-size: 20px !important;
+    color: #4C4C4C !important;
+    font-family: "SF Pro Display" !important;
+    font-weight: 400 !important;
+    margin-bottom: 0px !important;
+  }
+  h6.course-category {
+    font-size: 20px !important;
+    color: #b2b2b2 !important;
+    font-family: "SF Pro Display" !important;
+    font-weight: 100 !important;
+    margin-top: 0px !important;
+  }
+  .btn-view-course {
+    background: #f5f5f5 !important;
+    margin-right: 5% !important;
+    padding: 5px !important;
+    border-radius: 5px !important;
+    color: #f05523 !important;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2) !important;
+    border: 0px solid #e5e5e5 !important;
+    height: 2em !important;
+    min-height: 2em !important;
+  }
+  .banner-icon {
+    font-size: 45px;
+  }
+
+  .compentency-logo {
+    width: 75px;
+  }
+  .vl {
+    border-left: 2px solid #f05523;
+    height: 40px;
+    position: absolute;
+    left: 50%;
+    margin-left: 0px;
+    top: -32px;
+    transform: translateX(-50%);
+  }
+
+  .banner-container {
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.05);
+    background: #f7f7f7;
+    box-sizing: border-box;
+    position: relative !important;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+  }
+
+  .icon{
+    max-width: 35px !important;
+    max-height: 35px !important;
+    position: absolute;
+    bottom: 10px !important;
+    right: 5%;
+  }
+
+  ion-list {
+    position: relative !important;
+    z-index: 1;
+  }
+  .opacitor-50 {
+    opacity: 0.3;
+    filter: grayscale(100%);
+  }
+}
